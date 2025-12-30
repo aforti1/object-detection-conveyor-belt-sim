@@ -58,8 +58,8 @@ class SimConfig:
 	# lower / upper mask bounds in hsv
 	yellow_lower = (15, 80, 80) 
 	yellow_upper = (45, 255, 255)
-	white_lower = (0, 0, 200)
-	white_upper = (180, 50, 255)
+	white_lower = (0, 0, 120)
+	white_upper = (180, 80, 255)
 
 	render_engine = "EEVEE"
 	render_samples = 16

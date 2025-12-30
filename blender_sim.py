@@ -310,10 +310,9 @@ class CubeManager:
 				min_x_dist = max(0, min_x_dist)
 				x_dist = other_cube.location.x - new_x
 
-				if x_dist < min_x_dist:
+				if x_dist > 0 and x_dist < min_x_dist:
 					new_x = other_cube.location.x - min_x_dist
 
-			new_x = max(new_x, cube.location.x)
 			cube.location.x = new_x
 
 			if cube.location.x > CONFIG.belt_length + 5:
